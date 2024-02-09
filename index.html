@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title> Survey Form LP </title>
+    </head>
+    <body>
+  <header class="header">  <h1 id="title" class="text-center"> Survey </h1></header>
+    <p id="description"> insert text here <p>
+      <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+<label id="name-label" for="name">Enter Your Full Name:</label> <input id="name" name="name" type="text" placeholder="Your Full Name" required />
+<label id="email-label" for="email">Enter your Email:</label> <input id="email" name="email" type="email" placeholder="Your Email" required />
+<label id="number-label" for="number">Your age (optional):</label> <input id="number" name="age" type="number" min="12" max="100" placeholder="Age" />
+        </fieldset>
+<fieldset>
+<p>Your favourite 2017 album:</p>
+<label for="fmb"><input id="fmb" type="radio" name="fav-album" class="radio-album" checked value="1" />Flying Microtonal Banana</label>
+<label for="motu"><input id="motu" type="radio" name="fav-album" class="radio-album"value="2"/>Murder Of The Universe</label>
+<label for="sketches"><input id="sketches" type="radio" name="fav-album" class="radio-album" value="3"/>Sketches Of Brunswick East</label>
+<label for="poly"><input id="poly" type="radio" name="fav-album" class="radio-album" value="4"/>Polygondwanaland</label>
+<label for="gumboot"><input type="radio" id="gumboot" name="fav-album" class="radio-album" value="5"/>Gumboot Soup</label>
+</fieldset>
+<fieldset>
+<p>What do you play?</p>
+  <label for="gtr"><input type="checkbox" id="gtr" name="gtr" class="checkbox" value="gtr"/>Guitar</label>
+  <label for="bass"><input type="checkbox" id="bass" name="bass" class="checkbox" value="bass"/>Bass</label>
+ <label for="bng"><input type="checkbox" id="bng" name="bng" class="checkbox" value="bng"/>Bongo</label>
+  <label for="drms"><input type="checkbox" id="drms" name="drms" class="checkbox" value="drms"/>Drums</label>
+   <label for="piano"><input type="checkbox" id="piano" name="piano" class="checkbox" value="piano"/>Piano</label>
+   <label for="synth"><input type="checkbox" id="synth" name="synth" class="checkbox" value="synth"/>Synthesizer</label>
+</fieldset>
+<fieldset>
+  <p > How did you find the show?</p?>
+  <form>
+    <label for="dropdown" > Let me know your thoughts
+      <select id="dropdown" name="dropwdown">
+        <option value=""></option>
+        <option value="1">Epic</option>
+        <option value="2">Meh</option>
+        <option value="3">Amazing</option>
+        <option value="4">Was expecting more</option>
+        <option value="5">Best day of my life</option>
+        <option value="6">Below average</option>
+        <option value="7">The crowd was stinky</option>
+        <option value="8">Sounded bad</option>
+        <option value="9">I tripped a lot</option>
+        <option value="10">Vegemite (Oddments)</option>
+        <option value="11">Other</option>
+    </label><br>
+    <label for="comment"><textarea id="comment" name="comment" placeholder="If you picked Other, let me know what you think" rows="3" cols="30"></textarea>
+  </fieldset>
+<input type="submit" value="Submit Form" id="submit"/>
+    </form>
+      </body>
+  
